@@ -21,9 +21,6 @@
     <!-- AOS (Animate On Scroll) for modern animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- Swiper.js for responsive image slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
     
@@ -106,108 +103,47 @@
             </a>
         </div>
     </section>
+           
 
-
-    <!-- Our Recent Works - Image Slider Section -->
-    <section class="py-20 bg-gradient-to-b from-white to-gray-50">
+    <!-- Our Recent Works Section -->
+    <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-aos="fade-up">
-                    Our Recent Works
-                </h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-                    Explore our latest collection of stunning photography projects
-                </p>
-            </div>
+            <h2 class="font-display text-4xl md:text-5xl font-bold text-gray-900 text-center mb-12" data-aos="fade-up">
+                Our Recent Works
+            </h2>
             
-            <!-- Swiper Slider -->
-            <div class="swiper modern-slider" data-aos="zoom-in" data-aos-delay="200">
-                <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                        <div class="relative h-80 md:h-96 lg:h-[500px] overflow-hidden rounded-2xl shadow-2xl group">
-                            <img src="/wp-content/uploads/slider/1490x500 (1).jpg" alt="Recent Work 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                                <div class="text-white">
-                                    <p class="text-sm text-red-400 font-semibold mb-1">Featured Work</p>
-                                    <h4 class="text-2xl font-bold">Engagement Shoot</h4>
-                                </div>
-                            </div>
-                        </div>
+            <div class="max-w-5xl mx-auto">
+                <!-- Slider Container -->
+                <div class="relative w-full rounded-2xl shadow-2xl overflow-hidden" data-aos="zoom-in">
+                    <!-- Flexbox Slider Wrapper -->
+                    <div class="recent-slider-wrapper relative h-96 md:h-[500px] bg-gray-900 flex overflow-hidden">
+                        <!-- Slides -->
+                        <img src="https://picsum.photos/800/400?random=10" alt="Recent Work 1" class="recent-slider-slide w-full h-full object-cover flex-shrink-0 transition-opacity duration-1000 ease-in-out opacity-0" />
+                        <img src="https://picsum.photos/800/400?random=11" alt="Recent Work 2" class="recent-slider-slide w-full h-full object-cover flex-shrink-0 transition-opacity duration-1000 ease-in-out opacity-0" />
+                        <img src="https://picsum.photos/800/400?random=12" alt="Recent Work 3" class="recent-slider-slide w-full h-full object-cover flex-shrink-0 transition-opacity duration-1000 ease-in-out opacity-0" />
+                        <img src="https://picsum.photos/800/400?random=13" alt="Recent Work 4" class="recent-slider-slide w-full h-full object-cover flex-shrink-0 transition-opacity duration-1000 ease-in-out opacity-0" />
+                        <img src="https://picsum.photos/800/400?random=14" alt="Recent Work 5" class="recent-slider-slide w-full h-full object-cover flex-shrink-0 transition-opacity duration-1000 ease-in-out opacity-0" />
+                        <img src="https://picsum.photos/800/400?random=15" alt="Recent Work 6" class="recent-slider-slide w-full h-full object-cover flex-shrink-0 transition-opacity duration-1000 ease-in-out opacity-0" />
                     </div>
-                    
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                        <div class="relative h-80 md:h-96 lg:h-[500px] overflow-hidden rounded-2xl shadow-2xl group">
-                            <img src="/wp-content/uploads/slider/1490x500 (2).jpg" alt="Recent Work 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                                <div class="text-white">
-                                    <p class="text-sm text-red-400 font-semibold mb-1">Featured Work</p>
-                                    <h4 class="text-2xl font-bold">Haldi Moments</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                        <div class="relative h-80 md:h-96 lg:h-[500px] overflow-hidden rounded-2xl shadow-2xl group">
-                            <img src="/wp-content/uploads/slider/1490x500 (3).jpg" alt="Recent Work 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                                <div class="text-white">
-                                    <p class="text-sm text-red-400 font-semibold mb-1">Featured Work</p>
-                                    <h4 class="text-2xl font-bold">Gender Reveal Shoot</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Slide 4 -->
-                    <div class="swiper-slide">
-                        <div class="relative h-80 md:h-96 lg:h-[500px] overflow-hidden rounded-2xl shadow-2xl group">
-                            <img src="/wp-content/uploads/slider/1490x500 (4).jpg" alt="Recent Work 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                                <div class="text-white">
-                                    <p class="text-sm text-red-400 font-semibold mb-1">Featured Work</p>
-                                    <h4 class="text-2xl font-bold">Annaprashana Shoot</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Slide 5 -->
-                    <div class="swiper-slide">
-                        <div class="relative h-80 md:h-96 lg:h-[500px] overflow-hidden rounded-2xl shadow-2xl group">
-                            <img src="/wp-content/uploads/slider/1490x500 (5).jpg" alt="Recent Work 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                                <div class="text-white">
-                                    <p class="text-sm text-red-400 font-semibold mb-1">Featured Work</p>
-                                    <h4 class="text-2xl font-bold">Birthday Shoot</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Slide 6 -->
-                    <div class="swiper-slide">
-                        <div class="relative h-80 md:h-96 lg:h-[500px] overflow-hidden rounded-2xl shadow-2xl group">
-                            <img src="/wp-content/uploads/slider/1490x500 (6).jpg" alt="Recent Work 6" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                                <div class="text-white">
-                                    <p class="text-sm text-red-400 font-semibold mb-1">Featured Work</p>
-                                    <h4 class="text-2xl font-bold">Wedding Shoot</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <button id="recent-slider-prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/30 hover:bg-white/60 backdrop-blur-sm text-white w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 group" aria-label="Previous work" title="Previous image">
+                        <i class="fas fa-chevron-left text-xl group-hover:scale-125 transition-transform"></i>
+                    </button>
+                    <button id="recent-slider-next" class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/30 hover:bg-white/60 backdrop-blur-sm text-white w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 group" aria-label="Next work" title="Next image">
+                        <i class="fas fa-chevron-right text-xl group-hover:scale-125 transition-transform"></i>
+                    </button>
                 </div>
-                
-                <!-- Glassmorphism Navigation Arrows -->
-                <div class="swiper-button-prev slider-button-prev"></div>
-                <div class="swiper-button-next slider-button-next"></div>
-                
-                <!-- Pagination Dots -->
-                <div class="swiper-pagination slider-pagination"></div>
+
+                <!-- Dot Indicators -->
+                <div class="flex justify-center items-center gap-2 py-6 bg-gray-50">
+                    <button class="recent-slider-dot w-3 h-3 rounded-full bg-red-600 transition-all duration-300 cursor-pointer" data-index="0" aria-label="Go to work 1" title="Work 1"></button>
+                    <button class="recent-slider-dot w-3 h-3 rounded-full bg-gray-300 transition-all duration-300 cursor-pointer" data-index="1" aria-label="Go to work 2" title="Work 2"></button>
+                    <button class="recent-slider-dot w-3 h-3 rounded-full bg-gray-300 transition-all duration-300 cursor-pointer" data-index="2" aria-label="Go to work 3" title="Work 3"></button>
+                    <button class="recent-slider-dot w-3 h-3 rounded-full bg-gray-300 transition-all duration-300 cursor-pointer" data-index="3" aria-label="Go to work 4" title="Work 4"></button>
+                    <button class="recent-slider-dot w-3 h-3 rounded-full bg-gray-300 transition-all duration-300 cursor-pointer" data-index="4" aria-label="Go to work 5" title="Work 5"></button>
+                    <button class="recent-slider-dot w-3 h-3 rounded-full bg-gray-300 transition-all duration-300 cursor-pointer" data-index="5" aria-label="Go to work 6" title="Work 6"></button>
+                </div>
             </div>
         </div>
     </section>
@@ -247,7 +183,9 @@
                     <p class="text-sm mt-1 opacity-90">Complete portfolio</p>
                 </div>
             </div>
-            
+
+
+
             <!-- Organized Grid by Category -->
             <div class="space-y-16">
                 
@@ -599,7 +537,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Video Showcase Section -->
     <section class="py-20 bg-white">
@@ -1114,7 +1051,7 @@
                                     <i class="fab fa-instagram text-xl"></i>
                                 </a>
                                 </a>
-                                <!-- Replaced
+                                                                                                                             <!-- Replaced
                                 <a href="https://www.youtube.com/@ChhayaPhotography" target="_blank"
                                     class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-red-600 transition-all duration-300">
                                     <i class="fab fa-youtube text-xl"></i>
@@ -1190,52 +1127,6 @@
                     <div class="flex text-yellow-400 mb-4">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-300 mb-4 italic">"I had an amazing experience with Chhaya Photography! Mr. Rameshwor was professional, creative, and truly understood my vision.
-                        His attention to detail and eye for capturing special moments made the photos perfect. Highly recommend!"</p>
-                    <div class="flex items-center">
-                        <div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center mr-3">
-                            <span class="text-white font-bold">AA</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-white">Acharya</p>
-                            <p class="text-gray-500 text-sm">Birthday - Austin, TX</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 2 -->
-                <div class="bg-gray-800 rounded-xl p-6 shadow-xl border border-gray-700" data-aos="fade-up" data-aos-delay="300">
-                    <div class="flex text-yellow-400 mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-300 mb-4 italic">"Chhaya Photography did an amazing job with both decor and photography. Everything looked beautiful, and the photos captured every special moment perfectly. Highly recommended!"</p>
-                    <div class="flex items-center">
-                        <div class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center mr-3">
-                            <span class="text-white font-bold">AM</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-white">Bhanu & Neha</p>
-                            <p class="text-gray-500 text-sm">Gender Reveal - Austin, TX</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 3 -->
-                <div class="bg-gray-800 rounded-xl p-6 shadow-xl border border-gray-700" data-aos="fade-up" data-aos-delay="400">
-                    <div class="flex text-yellow-400 mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
                     </div>
                     <p class="text-gray-300 mb-4 italic">"The helicopter wedding shoot was a dream come true! Unique perspectives and absolutely breathtaking photos. Worth every penny!"</p>
                     <div class="flex items-center">
@@ -1296,133 +1187,111 @@
             </button>
     </button>
 
-    <!-- JavaScript -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- Swiper.js Script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
-    <!-- Swiper Configuration -->
+    <!-- Slider JavaScript -->
     <script>
-        const swiper = new Swiper('.modern-slider', {
-            loop: true,
-            autoplay: {
-                delay: 3500,
-                disableOnInteraction: false,
-            },
-            speed: 800,
-            pagination: {
-                el: '.slider-pagination',
-                clickable: true,
-                dynamicBullets: true,
-            },
-            navigation: {
-                nextEl: '.slider-button-next',
-                prevEl: '.slider-button-prev',
-            },
-            effect: 'slide',
-            slidesPerView: 1,
-            spaceBetween: 20,
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                1024: {
-                    slidesPerView: 1,
-                    spaceBetween: 30,
-                },
-            },
+        class ImageSlider {
+            constructor() {
+                this.slides = document.querySelectorAll('.slider-slide');
+                this.dots = document.querySelectorAll('.slider-dot');
+                this.prevBtn = document.getElementById('slider-prev');
+                this.nextBtn = document.getElementById('slider-next');
+                this.currentIndex = 0;
+                this.autoPlayInterval = null;
+                this.autoPlayDelay = 3000; // 3 seconds
+
+                this.init();
+            }
+
+            init() {
+                // Set first slide as active
+                this.showSlide(0);
+
+                // Event listeners
+                this.prevBtn.addEventListener('click', () => this.prevSlide());
+                this.nextBtn.addEventListener('click', () => this.nextSlide());
+                
+                // Dot navigation
+                this.dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => this.goToSlide(index));
+                });
+
+                // Auto-play
+                this.startAutoPlay();
+
+                // Pause auto-play on hover
+                const sliderContainer = document.querySelector('.slider-container');
+                sliderContainer.addEventListener('mouseenter', () => this.stopAutoPlay());
+                sliderContainer.addEventListener('mouseleave', () => this.startAutoPlay());
+            }
+
+            showSlide(index) {
+                // Remove opacity from all slides
+                this.slides.forEach(slide => {
+                    slide.classList.remove('opacity-100');
+                    slide.classList.add('opacity-0');
+                });
+
+                // Remove active state from all dots
+                this.dots.forEach(dot => {
+                    dot.classList.remove('bg-red-600', 'scale-125');
+                    dot.classList.add('bg-gray-300', 'scale-100');
+                });
+
+                // Add opacity to current slide
+                this.slides[index].classList.remove('opacity-0');
+                this.slides[index].classList.add('opacity-100');
+
+                // Add active state to current dot
+                this.dots[index].classList.remove('bg-gray-300', 'scale-100');
+                this.dots[index].classList.add('bg-red-600', 'scale-125');
+
+                this.currentIndex = index;
+            }
+
+            nextSlide() {
+                const nextIndex = (this.currentIndex + 1) % this.slides.length;
+                this.showSlide(nextIndex);
+                this.resetAutoPlay();
+            }
+
+            prevSlide() {
+                const prevIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+                this.showSlide(prevIndex);
+                this.resetAutoPlay();
+            }
+
+            goToSlide(index) {
+                this.showSlide(index);
+                this.resetAutoPlay();
+            }
+
+            startAutoPlay() {
+                this.autoPlayInterval = setInterval(() => {
+                    this.nextSlide();
+                }, this.autoPlayDelay);
+            }
+
+            stopAutoPlay() {
+                if (this.autoPlayInterval) {
+                    clearInterval(this.autoPlayInterval);
+                    this.autoPlayInterval = null;
+                }
+            }
+
+            resetAutoPlay() {
+                this.stopAutoPlay();
+                this.startAutoPlay();
+            }
+        }
+
+        // Initialize slider when DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            new ImageSlider();
         });
     </script>
-    
-    <!-- Glassmorphism Slider Styles -->
-    <style>
-        /* Glassmorphism Navigation Buttons */
-        .slider-button-prev,
-        .slider-button-next {
-            width: 50px;
-            height: 50px;
-            background: rgba(255, 255, 255, 0.2) !important;
-            backdrop-filter: blur(10px);
-            border-radius: 12px;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            transition: all 0.3s ease;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 20;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        
-        .slider-button-prev:hover,
-        .slider-button-next:hover {
-            background: rgba(239, 68, 68, 0.4) !important;
-            border-color: rgba(239, 68, 68, 0.6);
-            backdrop-filter: blur(15px);
-            box-shadow: 0 8px 32px rgba(239, 68, 68, 0.2);
-            transform: translateY(-50%) scale(1.1);
-        }
-        
-        .slider-button-prev::after,
-        .slider-button-next::after {
-            font-size: 20px;
-            color: white;
-            font-weight: bold;
-        }
-        
-        .slider-button-prev {
-            left: 15px;
-        }
-        
-        .slider-button-next {
-            right: 15px;
-        }
-        
-        /* Glassmorphism Pagination Dots */
-        .slider-pagination {
-            bottom: 20px !important;
-            display: flex;
-            justify-content: center;
-            gap: 8px;
-        }
-        
-        .slider-pagination .swiper-pagination-bullet {
-            width: 10px;
-            height: 10px;
-            background: rgba(255, 255, 255, 0.4);
-            border-radius: 50%;
-            opacity: 1;
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-        
-        .slider-pagination .swiper-pagination-bullet-active {
-            background: rgba(239, 68, 68, 0.8);
-            border-color: rgba(239, 68, 68, 1);
-            width: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
-        }
-        
-        /* Mobile responsiveness for navigation */
-        @media (max-width: 768px) {
-            .slider-button-prev,
-            .slider-button-next {
-                width: 40px;
-                height: 40px;
-            }
-            
-            .slider-button-prev::after,
-            .slider-button-next::after {
-                font-size: 16px;
-            }
-        }
-    </style>
-    
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
     
 </body>
