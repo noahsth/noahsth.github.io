@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Image Gallery | Chhaya Photography</title>
+
+    <!-- Tailwind (keeps look consistent with existing gallery) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome (icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- GLightbox for lightbox gallery -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Site styles -->
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="./gallery.css">
+    <link rel="icon" href="../wp-content/logo/favicon.svg" sizes="32x32">
+
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Navigation (matches homepage) -->
+    <nav class="fixed w-full bg-gray-900/95 backdrop-blur-sm shadow-lg z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="../" class="flex items-center">
+                    <img src="../wp-content/logo/main_logo.svg" alt="Chhaya Photography" class="h-12 md:h-16">
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="../#" class="nav-link text-gray-200 hover:text-red-500 transition-colors duration-300">Home</a>
+                    <a href="../portfolio" class="nav-link text-gray-200 hover:text-red-500 transition-colors duration-300">Portfolio</a>
+                    <a href="/real-estate" class="nav-link text-red-500 font-semibold transition-colors duration-300">Real Estate</a>
+                    <a href="../decoration" class="nav-link text-gray-200 hover:text-red-500 transition-colors duration-300">Decoration</a>
+                    <a href="../about-us" class="nav-link text-gray-200 hover:text-red-500 transition-colors duration-300">About Us</a>
+                    <a href="../contact-us" class="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-200" id="mobile-menu-btn" title="Open Menu" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden mobile-menu" id="mobile-menu">
+                <div class="pt-4 pb-3 space-y-3">
+                    <a href="../#" class="block text-gray-200 hover:text-red-500 py-2">Home</a>
+                    <a href="../portfolio" class="block text-gray-200 hover:text-red-500 py-2">Portfolio</a>
+                    <a href="/real-estate" class="block text-red-500 font-semibold py-2">Real Estate</a>
+                    <a href="../decoration" class="block text-gray-200 hover:text-red-500 py-2">Decoration</a>
+                    <a href="../about-us" class="block text-gray-200 hover:text-red-500 py-2">About Us</a>
+                    <a href="../contact-us" class="block bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 text-center">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold">Real Estate</h1>
+            <p class="text-gray-300 mt-2">Professional photos to make your listings stand out.</p>
+        </div>
+    </header>
+
+    <!-- Filters + Search -->
+    <section id="real-estate" class="py-6 bg-white shadow-sm sticky top-20 z-40">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div id="filter-controls" class="flex flex-wrap gap-3"></div>
+
+            <!-- Search menu placeholder: I created the UI here but will not decide its final placement—please tell me where you'd like this inserted on your site. -->
+            <div id="gallery-search-menu" class="w-full md:w-80">
+                <label class="sr-only">Search images</label>
+                <div class="relative">
+                    <input id="gallery-search-input" type="search" placeholder="Search tags (e.g., Round Rock, Real Estate)" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500" />
+                    <button id="gallery-search-clear" title="Clear" class="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 text-sm opacity-50 hover:opacity-90" aria-hidden="true"><i class="fas fa-times text-xs"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery grid -->
+    <main class="py-12">
+        <div class="container mx-auto px-6">
+            <div id="gallery-grid"></div>
+        </div>
+    </main>
+
+    <footer class="py-8 text-center text-sm text-gray-500">© Chhaya Photography — Real Estate Photography</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="./gallery.js"></script>
+</body>
+</html>
