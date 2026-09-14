@@ -106,43 +106,58 @@ if (backToTopBtn) {
 const filterButtons = document.querySelectorAll('.filter-btn');
 const portfolioItems = document.querySelectorAll('.portfolio-item');
 
+function applyPortfolioFilter(filterValue) {
+    filterButtons.forEach(btn => {
+        const isActive = btn.getAttribute('data-filter') === filterValue;
+        btn.classList.toggle('active', isActive);
+        btn.classList.toggle('bg-red-600', isActive);
+        btn.classList.toggle('text-white', isActive);
+        btn.classList.toggle('bg-gray-200', !isActive);
+        btn.classList.toggle('text-gray-800', !isActive);
+    });
+
+    portfolioItems.forEach(item => {
+        const category = item.getAttribute('data-category');
+        const shouldShow = filterValue === 'all' || category === filterValue;
+
+        item.style.display = shouldShow ? 'block' : 'none';
+
+        if (shouldShow) {
+            item.style.animation = 'none';
+            setTimeout(() => {
+                item.style.animation = 'fadeInUp 0.6s ease forwards';
+            }, 10);
+        }
+    });
+
+    AOS.refresh();
+}
+
 if (filterButtons.length > 0) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialFilter = urlParams.get('category') || 'all';
+    const validInitialFilter = document.querySelector(`.filter-btn[data-filter="${initialFilter}"]`) ? initialFilter : 'all';
+
+    applyPortfolioFilter(validInitialFilter);
+
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => {
-                btn.classList.remove('active', 'bg-red-600', 'text-white');
-                btn.classList.add('bg-gray-200', 'text-gray-800');
-            });
-            
-            // Add active class to clicked button
-            this.classList.remove('bg-gray-200', 'text-gray-800');
-            this.classList.add('active', 'bg-red-600', 'text-white');
-            
             const filterValue = this.getAttribute('data-filter');
-            
-            // Filter portfolio items
-            portfolioItems.forEach(item => {
-                const category = item.getAttribute('data-category');
-                
-                if (filterValue === 'all' || category === filterValue) {
-                    item.style.display = 'block';
-                    // Re-trigger animation
-                    item.style.animation = 'none';
-                    setTimeout(() => {
-                        item.style.animation = 'fadeInUp 0.6s ease forwards';
-                    }, 10);
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-            
-            // Refresh AOS animations for filtered items
-            AOS.refresh();
-            
-            // Scroll to filter nav container
+            const url = new URL(window.location.href);
+
+            if (filterValue === 'all') {
+                url.searchParams.delete('category');
+            } else {
+                url.searchParams.set('category', filterValue);
+            }
+
+            history.replaceState(null, '', url);
+            applyPortfolioFilter(filterValue);
+
             const filterNav = document.getElementById('filter-nav');
-            filterNav.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (filterNav) {
+                filterNav.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         });
     });
 }

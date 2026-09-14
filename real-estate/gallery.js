@@ -54,6 +54,15 @@ const images = [
 { id: 40, src: '../wp-content/uploads/real-estate/realestate (40).jpg', title:'Interior', propertyId:'Pro5', tags: ['15227 Sarahs Creek Dr Dr Pflugerville, TX 78660', 'Pflugerville'] },
 { id: 41, src: '../wp-content/uploads/real-estate/realestate (41).jpg', title:'Interior', propertyId:'Pro5', tags: ['15228 Sarahs Creek Dr Dr Pflugerville, TX 78660', 'Pflugerville'] },
 { id: 42, src: '../wp-content/uploads/real-estate/realestate (42).jpg', title:'Interior', propertyId:'Pro5', tags: ['15229 Sarahs Creek Dr Dr Pflugerville, TX 78660', 'Pflugerville'] },
+{ id: 43, src: '../wp-content/uploads/real-estate/realestate (44).jpg', title:'Exterior', propertyId:'Pro6', tags: ['606 Screech Owl Dr Pflugerville, TX 78660', 'Pflugerville'] },
+{ id: 44, src: '../wp-content/uploads/real-estate/realestate (45).jpg', title:'Living Area', propertyId:'Pro6', tags: ['606 Screech Owl Dr Pflugerville, TX 78660', 'Pflugerville'] },
+{ id: 45, src: '../wp-content/uploads/real-estate/realestate (46).jpg', title:'Kitchen', propertyId:'Pro6', tags: ['606 Screech Owl Dr Pflugerville, TX 78660', 'Pflugerville'] },
+{ id: 46, src: '../wp-content/uploads/real-estate/realestate (47).jpg', title:'Dining Area', propertyId:'Pro6', tags: ['606 Screech Owl Dr Pflugerville, TX 78660', 'Pflugerville'] },
+{ id: 47, src: '../wp-content/uploads/real-estate/realestate (48).jpg', title:'Bedroom', propertyId:'Pro6', tags: ['606 Screech Owl Dr Pflugerville, TX 78660', 'Pflugerville'] },
+{ id: 48, src: '../wp-content/uploads/real-estate/realestate (49).jpg', title:'Bathroom', propertyId:'Pro6', tags: ['606 Screech Owl Dr Pflugerville, TX 78660', 'Pflugerville'] },
+{ id: 49, src: '../wp-content/uploads/real-estate/realestate (50).jpg', title:'Backyard', propertyId:'Pro6', tags: ['606 Screech Owl Dr Pflugerville, TX 78660', 'Pflugerville'] },
+{ id: 50, src: '../wp-content/uploads/real-estate/realestate (51).jpg', title:'Exterior', propertyId:'Pro6', tags: ['606 Screech Owl Dr Pflugerville, TX 78660', 'Pflugerville'] },
+
 ];
 
 
