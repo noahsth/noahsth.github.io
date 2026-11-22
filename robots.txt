@@ -1,0 +1,8 @@
+# Allow search engines to crawl the site and its page assets.
+User-agent: *
+Allow: /
+
+# Keep the gallery documentation out of search results.
+Disallow: /real-estate/README.md
+
+Sitemap: https://www.chhayaphotography.com/sitemap.xml
